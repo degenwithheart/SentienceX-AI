@@ -1,0 +1,20 @@
+{
+    "ai_name": "SentienceX",
+    "version": "1.0",
+    "offline_mode": true,
+    "training_interval_hours": 48,
+    "memory_enabled": true,
+    "log_interactions": true,
+    "log_emotions": true,
+    "log_training": true,
+    "notify_training_complete": true,
+    "voice_input": true,
+    "text_input": true,
+    "response_generation": true,
+    "threat_detection": true,
+    "sentiment_analysis": true,
+    "save_interactions": true,
+    "database_path": "memory/sentiencex.db",
+    "text_model_path": "models/distilgpt",
+    "emotion_model_path": "models/distilbert"
+  }  
