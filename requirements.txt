@@ -1,0 +1,12 @@
+tensorflow
+numpy
+scipy
+coqui-tts
+transformers
+torch
+sounddevice
+speechrecognition
+pydub
+redis
+matplotlib
+sqlite3
