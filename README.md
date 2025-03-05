@@ -1,36 +1,38 @@
 # SentienceX AI – Offline, Proactive & Self-Aware AI
 
-🚀 SentienceX AI is a fully offline, self-learning, proactive AI assistant inspired by The Machine from Person of Interest. It continuously listens, learns, and reacts to user behavior, analyzing emotions, detecting threats, and improving itself over time. SentienceX AI is designed to help and support people in their day-to-day tasks, provide companionship as a friend to talk to, offer guidance, and promote overall well-being.
+🚀 **SentienceX AI** is an advanced, fully offline, self-learning AI assistant inspired by The Machine from Person of Interest. This AI continuously listens, learns, and reacts to user behavior, analyzing emotional states and providing meaningful responses.
+
+> **Note:** This repository currently uses DistilBERT & DistilGPT models for testing purposes until our own models are trained and production-ready.
 
 ## 📌 Features Overview
 
 ### 🔥 Core AI Features
-- ✔ **Offline Operation** – No internet, no APIs, fully local.
-- ✔ **Text & Voice Input** – Listens to both typed text and live voice input.
-- ✔ **Sentiment & Emotional Analysis** – Detects moods, stress levels, and emotional states.
-- ✔ **Threat Detection & Awareness** – Recognizes dangerous statements & tracks behavior trends.
-- ✔ **Proactive AI (Doesn’t Wait for Input)** – Analyzes trends and speaks when necessary.
-- ✔ **AI Responses (Text Generation)** – Generates meaningful responses based on input & emotions.
+- **Offline Operation:** No internet, no APIs, fully local.
+- **Text & Voice Input:** Listens to both typed text and live voice input.
+- **Sentiment & Emotional Analysis:** Detects moods, stress levels, and emotional states.
+- **Threat Detection & Awareness:** Recognizes dangerous statements & tracks behavior trends.
+- **Proactive AI:** Analyzes trends and speaks when necessary.
+- **AI Responses:** Generates meaningful responses based on input & emotions.
 
 ### 🔄 Self-Learning & Training
-- ✔ **Auto-Trains Every 48 Hours** – Retrains TextAI & EmotionAI automatically.
-- ✔ **Uses Local Datasets** – Loads new training data from `/text/` and `/emotion/`.
-- ✔ **Trains Models & Saves Updates** – Improves responses and emotional accuracy over time.
-- ✔ **Logs Training Events** – Keeps track of when & how models were retrained.
-- ✔ **Offline Notifications for Training** – Notifies when AI completes training.
+- **Auto-Trains Every 48 Hours:** Retrains TextAI & EmotionAI automatically.
+- **Uses Local Datasets:** Loads new training data from `/text/` and `/emotion/`.
+- **Trains Models & Saves Updates:** Improves responses and emotional accuracy over time.
+- **Logs Training Events:** Keeps track of when & how models were retrained.
+- **Offline Notifications for Training:** Notifies when AI completes training.
 
 ### 🧠 Memory & Awareness
-- ✔ **Long-Term Memory (Awareness System)** – Remembers past emotional trends and user behavior.
-- ✔ **Behavior Adaptation** – Adjusts tone & responses based on historical data.
-- ✔ **Recognizes Patterns (Recent Interactions)** – Notices mood swings, negative trends, and stress indicators.
-- ✔ **Stores Key Interactions** – Saves important user interactions for future context.
-- ✔ **Logs & Tracks Sentiments** – Visualizes mood trends over time.
+- **Long-Term Memory:** Remembers past emotional trends and user behavior.
+- **Behavior Adaptation:** Adjusts tone & responses based on historical data.
+- **Recognizes Patterns:** Notices mood swings, negative trends, and stress indicators.
+- **Stores Key Interactions:** Saves important user interactions for future context.
+- **Logs & Tracks Sentiments:** Visualizes mood trends over time.
 
 ### 📝 Logging & Data Visualization
-- ✔ **Logs Conversations & Emotional Data** – Stores all interactions & threat levels.
-- ✔ **Tracks Emotional Trends (10-Minute Intervals)** – Runs a self-check every 10 minutes.
-- ✔ **Visualizes Sentiment Trends** – Graphs mood changes over time.
-- ✔ **Memory System Saves & Loads Data** – Retains knowledge of past interactions.
+- **Logs Conversations & Emotional Data:** Stores all interactions & threat levels.
+- **Tracks Emotional Trends:** Runs a self-check every 10 minutes.
+- **Visualizes Sentiment Trends:** Graphs mood changes over time.
+- **Memory System Saves & Loads Data:** Retains knowledge of past interactions.
 
 ## 📌 How SentienceX AI Works
 
@@ -113,13 +115,12 @@ Would you like any of these features in the future? 🚀
 Feel free to contribute, suggest new features, or report issues!
 🔧 Pull Requests & Enhancements Welcome!
 
-📫 For any questions or custom requests, reach out via GitHub Issues.
+📫 For any questions or custom requests, reach out via [GitHub Issues](https://github.com/stuartmoseley/SentienceX-AI/issues).
 
 ## 📌 Funding & Support
-We are currently seeking funding to help improve this model and deploy the application. Your support will help us enhance the AI's capabilities and bring this project to a wider audience. If you are interested in supporting SentienceX AI, please consider contributing or reaching out to us for more information.
+We are currently seeking funding to help improve this model and deploy the application. Your support will help us enhance the AI's capabilities and bring this project to a wider audience. If you are interested in supporting this project, please contact us through GitHub.
 
 ## 📌 Final Notes
-SentienceX AI is a powerful, self-learning AI assistant that operates entirely offline with long-term memory & proactive behavior. It is designed to help and support people in their day-to-day tasks, provide companionship, offer guidance, and promote well-being.
-🚀 Your AI now evolves over time, learns from your behavior, and reacts in a caring, thoughtful way.
+SentienceX AI is a powerful, self-learning AI assistant that operates entirely offline with long-term memory & proactive behavior. It is designed to help and support people in their day-to-day tasks, evolving over time based on user interactions.
 
 🚀 Welcome to the future of AI interaction!
