@@ -23,3 +23,16 @@ SentienceX-AI is an advanced AI-powered platform designed for sentiment analysis
 - **Error Handling**: Displays detailed error messages for better debugging.
 - **Loading Feedback**: Provides visual indicators for loading states.
 - **Built with Next.js**: Utilizes Next.js for server-side rendering and optimized performance.
+
+# Proactive & Self-Aware AI
+
+## Features
+
+### 1. Self-Monitoring
+Tracks resource usage and performance metrics to ensure optimal operation.
+
+### 2. Logging
+Records system decisions, errors, and states for debugging and analysis.
+
+### 3. Adaptive Learning
+Adjusts behavior based on feedback to improve performance dynamically.
