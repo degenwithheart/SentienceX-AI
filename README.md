@@ -36,3 +36,7 @@ Records system decisions, errors, and states for debugging and analysis.
 
 ### 3. Adaptive Learning
 Adjusts behavior based on feedback to improve performance dynamically.
+
+If SentienceX-AI helps your projects or you appreciate the work, you can support future development and open-source AI by tipping:
+SOL: 4U3kLekCh53rXxxQE3hSbqoKKLzZpLYYZRTc26R8mnGe
+Your support keeps the AI learning!
