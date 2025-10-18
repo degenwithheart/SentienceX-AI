@@ -36,12 +36,9 @@ def retrain_model():
         # Train model
         model.fit(inputs["input_ids"], labels, batch_size=32, epochs=3)
 
-    # Save model into a timestamped subfolder to avoid accidental overwrite
-    timestamp = str(int(time.time()))
-    target_dir = os.path.join(MODEL_SAVE_PATH, f"retrained_{timestamp}")
-    os.makedirs(target_dir, exist_ok=True)
-    model.save_pretrained(target_dir)
-    logging.info(f"Model retrained and saved at {target_dir}")
+        # Save model
+        model.save_pretrained(MODEL_SAVE_PATH)
+        logging.info(f"Model retrained and saved at {MODEL_SAVE_PATH}")
     except Exception as e:
         logging.error(f"Error during retraining: {str(e)}")
 
