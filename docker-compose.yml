@@ -1,0 +1,54 @@
+version: '3.8'
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_DEVICE=cpu
+      - DISABLE_HTTPS_ENFORCEMENT=true
+      - LOG_ROTATE=true
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./:/app
+    depends_on:
+      - redis
+      - caddy
+
+  # Optional infra services (uncomment to enable)
+  # redis:
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+  # rabbitmq:
+  #   image: rabbitmq:3-management
+  #   ports:
+  #     - "5672:5672"
+  #     - "15672:15672"
+  # postgres:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_USER: sentience
+  #     POSTGRES_PASSWORD: sentience
+  #     POSTGRES_DB: sentience
+  #   ports:
+  #     - "5432:5432"
+
+  # Caddy as TLS reverse-proxy for local development; uses an internal CA so no external certificates are required.
+  caddy:
+    image: caddy:2
+    ports:
+      - "443:443"
+      - "2019:2019" # caddy admin
+    volumes:
+      - ./deploy/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - backend
+
+volumes:
+  caddy_data:
+  caddy_config:

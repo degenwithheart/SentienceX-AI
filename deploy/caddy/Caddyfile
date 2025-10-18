@@ -1,0 +1,10 @@
+# Caddyfile for SentienceX-AI local TLS reverse proxy
+# Uses internal CA for development so browsers will trust the local certs if
+# you follow the repo's README instructions to trust the generated CA.
+
+# Host for local development; change to your machine hostname if needed.
+localhost {
+    tls internal
+
+    reverse_proxy backend:8000
+}
