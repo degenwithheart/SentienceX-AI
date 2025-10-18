@@ -18,6 +18,10 @@ SentienceX-AI is an advanced AI-powered chatbot application that provides intell
 - **Secure Deployment**: HTTPS enforcement, CORS protection, and trusted host middleware.
 - **Docker Support**: Containerized deployment with docker-compose for local development.
 
+## Model Information
+
+The application utilizes pre-trained models from Hugging Face for immediate functionality and analysis capabilities while custom local models are being trained and fine-tuned for optimal performance.
+
 ## Requirements
 
 - Python 3.8+
@@ -104,6 +108,11 @@ See `backend/README.md` for detailed configuration options.
 - `POST /api/retrain`: Trigger model retraining.
 - `GET /api/ratelimit/keys`: Admin endpoint for rate limit inspection.
 - `GET /metrics`: Prometheus metrics endpoint.
+
+## Additional Documentation
+
+- **[Backend README](backend/README.md)**: Comprehensive guide to the FastAPI backend, including detailed setup instructions, API endpoint documentation, configuration options, and machine learning model details.
+- **[Frontend README](frontend/README.md)**: Complete overview of the Next.js frontend, covering development setup, component architecture, UI features, and real-time data visualization.
 
 ## Contributing
 
