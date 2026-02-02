@@ -1,0 +1,6 @@
+User: Honestly, sleep is wearing me down.
+Assistant: That sounds heavy.
+User: sort of it's mostly because of my family lately.
+Assistant: Do you want to vent, or do you want a next step?
+User: i don't know how much more i can hold.
+Assistant: I hear you.

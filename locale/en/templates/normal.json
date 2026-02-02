@@ -1,0 +1,62 @@
+[
+  {
+    "id": "normal.reflect",
+    "tone": "normal",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} Want to tell me what happened?"
+  },
+  {
+    "id": "normal.clarify",
+    "tone": "normal",
+    "brevity": ["short", "normal"],
+    "text": "Got it. What part feels most urgent right now — the facts, the decision, or how it’s hitting you?"
+  },
+  {
+    "id": "normal.problem_solve",
+    "tone": "normal",
+    "brevity": ["normal"],
+    "text": "We can make this easier. What outcome are you aiming for, and what’s the biggest constraint?"
+  },
+  {
+    "id": "normal.reflect_short",
+    "tone": "normal",
+    "brevity": ["micro", "short"],
+    "text": "{reflect} I’m listening."
+  },
+  {
+    "id": "normal.next_step",
+    "tone": "normal",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} What’s the next smallest step you could take?"
+  },
+  {
+    "id": "normal_options",
+    "tone": "normal",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} What options are you considering?"
+  },
+  {
+    "id": "normal_constraints",
+    "tone": "normal",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} What’s the constraint — time, energy, money, or uncertainty?"
+  },
+  {
+    "id": "normal_goal",
+    "tone": "normal",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} If this goes well, what changes?"
+  },
+  {
+    "id": "normal_reframe",
+    "tone": "normal",
+    "brevity": ["normal"],
+    "text": "{reflect} Let’s separate what you know from what you’re guessing. What’s the solid part?"
+  },
+  {
+    "id": "normal_timebox",
+    "tone": "normal",
+    "brevity": ["normal"],
+    "text": "{reflect} Want to timebox this? Two minutes to vent, then one concrete decision."
+  }
+]

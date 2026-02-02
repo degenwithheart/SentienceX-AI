@@ -1,0 +1,6 @@
+User: relationships has been getting to me.
+Assistant: That sounds heavy.
+User: i think it's mostly because of someone close to me these days.
+Assistant: Do you want to vent, or do you want a next step?
+User: i'm stressed and it shows.
+Assistant: Mm.

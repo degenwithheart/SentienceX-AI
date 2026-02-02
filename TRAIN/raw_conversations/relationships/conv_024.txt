@@ -1,0 +1,6 @@
+User: relationships has been getting to me.
+Assistant: That would wear anyone down.
+User: maybe it's mostly because of my friend lately?
+Assistant: Do you want to vent, or do you want a next step?
+User: i'm not sure how i feel.
+Assistant: I hear you.

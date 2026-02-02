@@ -1,0 +1,6 @@
+User: I feel stuck with burnout.
+Assistant: That’s a lot to carry.
+User: probably it's mostly because of my family lately.
+Assistant: What’s the piece you can’t stop thinking about?
+User: i'm fine i guess.
+Assistant: I hear you.

@@ -1,0 +1,6 @@
+User: I feel stuck with relationships.
+Assistant: That sounds heavy.
+User: i think it's mostly because of my coworker this week.
+Assistant: Do you want to vent, or do you want a next step?
+User: i feel overwhelmed.
+Assistant: I hear you.

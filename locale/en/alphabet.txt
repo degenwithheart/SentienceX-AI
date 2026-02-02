@@ -1,0 +1,4 @@
+# Used by the segmenter to decide "word-ish" runs vs separators.
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+ -'’_./,:;!?@#$%&*()+={}[]<>\"“”\n\t
+

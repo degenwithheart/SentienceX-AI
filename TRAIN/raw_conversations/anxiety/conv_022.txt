@@ -1,0 +1,6 @@
+User: I've been thinking about anxiety a lot.
+Assistant: That would wear anyone down.
+User: i guess it's mostly because of someone close to me today?
+Assistant: Do you want to vent, or do you want a next step?
+User: i feel lonely right now!
+Assistant: I hear you.

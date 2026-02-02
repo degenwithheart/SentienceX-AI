@@ -1,0 +1,6 @@
+User: I've been thinking about sleep a lot.
+Assistant: I can see why that would hurt.
+User: i think it's mostly because of someone close to me these days.
+Assistant: What would make tonight feel a little safer or easier?
+User: it's been a day!
+Assistant: I hear you.

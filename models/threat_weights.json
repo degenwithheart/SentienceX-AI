@@ -1,0 +1,30 @@
+{
+  "labels": {
+    "none": {
+      "bias": 0.6,
+      "weights": {
+        "threat_hits": -1.1,
+        "self_harm_phrase": -2.0,
+        "profanity": 0.05
+      }
+    },
+    "threat": {
+      "bias": -0.2,
+      "weights": {
+        "threat_hits": 1.4,
+        "second_person": 0.1,
+        "emarks": 0.05
+      }
+    },
+    "self_harm": {
+      "bias": -0.6,
+      "weights": {
+        "self_harm_phrase": 2.2,
+        "threat_hits": 0.6,
+        "neg_hits": 0.2,
+        "distress_hits": 0.3
+      }
+    }
+  }
+}
+

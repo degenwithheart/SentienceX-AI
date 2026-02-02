@@ -1,0 +1,6 @@
+User: I feel stuck with relationships.
+Assistant: That sounds heavy.
+User: not sure it's mostly because of my friend.
+Assistant: What would make tonight feel a little safer or easier?
+User: i'm listening.
+Assistant: I hear you.

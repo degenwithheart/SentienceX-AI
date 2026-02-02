@@ -1,0 +1,14 @@
+# topic=anxiety
+# sensitivity=0.55
+anxiety|1.0
+worry|0.9
+tension|0.8
+racing thoughts|0.9
+panic|0.8
+avoidance|0.7
+restless|0.6
+tight chest|0.6
+overthinking|0.7
+on edge|0.6
+uneasy|0.5
+can't relax|0.6

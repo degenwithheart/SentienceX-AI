@@ -1,0 +1,6 @@
+User: I feel stuck with sleep.
+Assistant: That’s a lot to carry.
+User: i guess it's mostly because of my partner today!
+Assistant: What’s the piece you can’t stop thinking about?
+User: i'm stressed right now.
+Assistant: Okay.

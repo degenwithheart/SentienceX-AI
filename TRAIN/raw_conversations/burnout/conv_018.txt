@@ -1,0 +1,6 @@
+User: I've been thinking about burnout a lot.
+Assistant: That sounds heavy.
+User: kind of it's mostly because of my coworker lately?
+Assistant: Do you want to vent, or do you want a next step?
+User: i'm not sure how i feel!
+Assistant: I'm with you.

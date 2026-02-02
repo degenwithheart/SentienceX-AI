@@ -1,0 +1,6 @@
+User: I feel stuck with relationships.
+Assistant: That’s a lot to carry.
+User: probably it's mostly because of my friend.
+Assistant: What’s the piece you can’t stop thinking about?
+User: this hurts right now.
+Assistant: I hear you.

@@ -1,0 +1,67 @@
+{
+  "labels": {
+    "greeting": {
+      "bias": -0.2,
+      "weights": {
+        "pos_hits": 0.2,
+        "len_tokens": -0.03,
+        "qmarks": -0.2,
+        "emarks": 0.03
+      }
+    },
+    "question": {
+      "bias": 0.0,
+      "weights": {
+        "qmarks": 1.2,
+        "contains_quote": 0.1,
+        "len_tokens": 0.02,
+        "please": 0.1
+      }
+    },
+    "venting": {
+      "bias": 0.0,
+      "weights": {
+        "neg_hits": 0.8,
+        "distress_hits": 0.8,
+        "ellipses": 0.15,
+        "emarks": 0.05,
+        "first_person": 0.08,
+        "masking_hits": 0.2,
+        "minimizer_hits": 0.15
+      }
+    },
+    "planning": {
+      "bias": -0.1,
+      "weights": {
+        "contains_and": 0.12,
+        "len_tokens": 0.03,
+        "urgent_words": 0.35
+      }
+    },
+    "task": {
+      "bias": -0.1,
+      "weights": {
+        "please": 0.25,
+        "len_tokens": 0.02,
+        "qmarks": 0.1
+      }
+    },
+    "feedback": {
+      "bias": -0.2,
+      "weights": {
+        "thanks": 0.25,
+        "apology": 0.15,
+        "second_person": 0.05,
+        "len_tokens": 0.01
+      }
+    },
+    "goodbye": {
+      "bias": -0.2,
+      "weights": {
+        "pos_hits": 0.15,
+        "len_tokens": -0.02
+      }
+    }
+  }
+}
+

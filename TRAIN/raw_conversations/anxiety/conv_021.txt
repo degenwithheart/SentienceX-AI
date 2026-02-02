@@ -1,0 +1,6 @@
+User: I feel stuck with anxiety.
+Assistant: That would wear anyone down.
+User: i guess it's mostly because of my partner lately.
+Assistant: What would make tonight feel a little safer or easier?
+User: i'm anxious?
+Assistant: I'm with you.

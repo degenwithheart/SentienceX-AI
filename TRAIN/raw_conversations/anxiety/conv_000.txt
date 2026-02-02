@@ -1,0 +1,6 @@
+User: I feel stuck with anxiety.
+Assistant: That’s a lot to carry.
+User: probably it's mostly because of someone close to me recently.
+Assistant: What’s the piece you can’t stop thinking about?
+User: this has been weighing on me.
+Assistant: I hear you.

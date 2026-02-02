@@ -1,0 +1,6 @@
+User: I feel stuck with relationships.
+Assistant: That sounds heavy.
+User: not sure it's mostly because of my family today.
+Assistant: What part feels hardest right now?
+User: i don't know!
+Assistant: Okay.

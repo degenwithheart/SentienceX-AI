@@ -1,0 +1,6 @@
+User: Honestly, sleep is wearing me down.
+Assistant: That’s a lot to carry.
+User: maybe it's mostly because of my friend today.
+Assistant: What’s the piece you can’t stop thinking about?
+User: i'm anxious right now!
+Assistant: I'm with you.

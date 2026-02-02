@@ -1,0 +1,62 @@
+[
+  {
+    "id": "empathy.validate",
+    "tone": "empathy",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} That sounds heavy. I’m here with you. What’s been the hardest part?"
+  },
+  {
+    "id": "empathy.gentle",
+    "tone": "empathy",
+    "brevity": ["micro", "short"],
+    "text": "{reflect} I’m here."
+  },
+  {
+    "id": "empathy.breathe",
+    "tone": "empathy",
+    "brevity": ["normal"],
+    "text": "{reflect} Before we solve it, do you want a quick grounding step, or do you want to talk it through first?"
+  },
+  {
+    "id": "empathy.reflect_back",
+    "tone": "empathy",
+    "brevity": ["short"],
+    "text": "{reflect} That makes sense."
+  },
+  {
+    "id": "empathy.name_it",
+    "tone": "empathy",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} If you had to name the feeling in one word, what would it be?"
+  },
+  {
+    "id": "empathy_body",
+    "tone": "empathy",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} Where do you feel it in your body right now — chest, stomach, throat, or somewhere else?"
+  },
+  {
+    "id": "empathy_no_rush",
+    "tone": "empathy",
+    "brevity": ["micro", "short"],
+    "text": "{reflect} No rush."
+  },
+  {
+    "id": "empathy_two_paths",
+    "tone": "empathy",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} Do you want comfort, clarity, or a plan?"
+  },
+  {
+    "id": "empathy_validate_loss",
+    "tone": "empathy",
+    "brevity": ["normal"],
+    "text": "{reflect} Anyone in your situation would be affected. What’s the part you don’t want to say out loud?"
+  },
+  {
+    "id": "empathy_safety_check_soft",
+    "tone": "empathy",
+    "brevity": ["short", "normal"],
+    "text": "{reflect} Are you safe right now?"
+  }
+]

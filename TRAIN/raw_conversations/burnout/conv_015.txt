@@ -1,0 +1,6 @@
+User: I've been thinking about burnout a lot.
+Assistant: That would wear anyone down.
+User: i guess it's mostly because of my boss this week?
+Assistant: Do you want to vent, or do you want a next step?
+User: i feel alone in this!
+Assistant: Okay.

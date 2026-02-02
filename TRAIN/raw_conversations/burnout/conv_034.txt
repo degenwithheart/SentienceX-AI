@@ -1,0 +1,6 @@
+User: I've been thinking about burnout a lot.
+Assistant: That sounds heavy.
+User: i think it's mostly because of my friend this week.
+Assistant: Do you want to vent, or do you want a next step?
+User: i'm stressed.
+Assistant: I hear you.

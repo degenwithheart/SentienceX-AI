@@ -1,0 +1,6 @@
+User: relationships has been getting to me.
+Assistant: That sounds heavy.
+User: probably it's mostly because of my boss this week.
+Assistant: What’s the piece you can’t stop thinking about?
+User: i'm stressed and it shows.
+Assistant: Mm.

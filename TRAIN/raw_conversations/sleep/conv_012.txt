@@ -1,0 +1,6 @@
+User: I've been thinking about sleep a lot.
+Assistant: That’s a lot to carry.
+User: probably it's mostly because of my boss recently?
+Assistant: What would make tonight feel a little safer or easier?
+User: i'm here?
+Assistant: Mm.

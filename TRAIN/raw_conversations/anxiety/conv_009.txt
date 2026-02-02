@@ -1,0 +1,6 @@
+User: I've been thinking about anxiety a lot.
+Assistant: That sounds heavy.
+User: i think it's mostly because of my partner.
+Assistant: What’s the piece you can’t stop thinking about?
+User: i'm here.
+Assistant: I'm with you.

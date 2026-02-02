@@ -1,0 +1,6 @@
+User: anxiety has been getting to me.
+Assistant: That’s a lot to carry.
+User: probably it's mostly because of my family lately?
+Assistant: What part feels hardest right now?
+User: i'm not sure how i feel.
+Assistant: I'm with you.

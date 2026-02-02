@@ -1,0 +1,6 @@
+User: I've been thinking about anxiety a lot.
+Assistant: That would wear anyone down.
+User: i guess it's mostly because of my boss this week.
+Assistant: What part feels hardest right now?
+User: i don't know how much more i can hold.
+Assistant: Mm.

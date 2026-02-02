@@ -1,0 +1,6 @@
+User: I feel stuck with burnout.
+Assistant: That’s a lot to carry.
+User: probably it's mostly because of my boss today.
+Assistant: What would make tonight feel a little safer or easier?
+User: i'm anxious lately.
+Assistant: Mm.

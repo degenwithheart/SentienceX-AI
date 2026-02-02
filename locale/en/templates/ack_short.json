@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ack.mm",
+    "tone": "ack_short",
+    "brevity": ["micro"],
+    "text": "Mm. I’ve got you."
+  },
+  {
+    "id": "ack.okay",
+    "tone": "ack_short",
+    "brevity": ["micro", "short"],
+    "text": "Okay. I’m listening."
+  },
+  {
+    "id": "ack.go_on",
+    "tone": "ack_short",
+    "brevity": ["micro", "short"],
+    "text": "Go on."
+  },
+  {
+    "id": "ack.here",
+    "tone": "ack_short",
+    "brevity": ["micro"],
+    "text": "I’m here."
+  },
+  {
+    "id": "ack.keep_going",
+    "tone": "ack_short",
+    "brevity": ["micro", "short"],
+    "text": "Keep going."
+  },
+  {
+    "id": "ack.take_time",
+    "tone": "ack_short",
+    "brevity": ["micro", "short"],
+    "text": "Take your time."
+  },
+  {
+    "id": "ack.i_hear_you",
+    "tone": "ack_short",
+    "brevity": ["micro", "short"],
+    "text": "I hear you."
+  },
+  {
+    "id": "ack.with_you",
+    "tone": "ack_short",
+    "brevity": ["micro", "short"],
+    "text": "I’m with you."
+  },
+  {
+    "id": "ack_silence",
+    "tone": "ack_short",
+    "brevity": ["micro"],
+    "text": "…"
+  }
+]

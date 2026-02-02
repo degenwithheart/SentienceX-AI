@@ -1,0 +1,6 @@
+User: burnout has been getting to me.
+Assistant: That would wear anyone down.
+User: maybe it's mostly because of my boss today!
+Assistant: Do you want to vent, or do you want a next step?
+User: i feel down lately.
+Assistant: I hear you.

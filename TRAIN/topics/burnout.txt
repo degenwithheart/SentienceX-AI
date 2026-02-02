@@ -1,0 +1,14 @@
+# topic=burnout
+# sensitivity=0.45
+burnout|1.0
+exhausted|0.9
+drained|0.9
+numb|0.7
+detached|0.6
+overworked|0.7
+no energy|0.8
+can't focus|0.6
+sleep|0.5
+no motivation|0.6
+running on empty|0.7
+mentally foggy|0.5

@@ -1,0 +1,40 @@
+{
+  "labels": {
+    "pos": {
+      "bias": 0.0,
+      "weights": {
+        "pos_hits": 1.4,
+        "neg_hits": -1.1,
+        "distress_hits": -0.3,
+        "thanks": 0.4,
+        "apology": -0.2,
+        "profanity": -0.6,
+        "emarks": 0.05,
+        "ellipses": -0.05
+      }
+    },
+    "neu": {
+      "bias": 0.4,
+      "weights": {
+        "pos_hits": -0.2,
+        "neg_hits": -0.2,
+        "distress_hits": -0.1,
+        "qmarks": 0.02,
+        "len_tokens": 0.01
+      }
+    },
+    "neg": {
+      "bias": 0.0,
+      "weights": {
+        "neg_hits": 1.6,
+        "distress_hits": 0.8,
+        "pos_hits": -0.9,
+        "profanity": 0.4,
+        "ellipses": 0.12,
+        "caps_ratio": 0.8,
+        "apology": 0.15
+      }
+    }
+  }
+}
+

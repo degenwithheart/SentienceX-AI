@@ -1,0 +1,6 @@
+User: Honestly, anxiety is wearing me down.
+Assistant: That sounds heavy.
+User: maybe it's mostly because of someone close to me today?
+Assistant: What would make tonight feel a little safer or easier?
+User: i feel alone in this.
+Assistant: I hear you.

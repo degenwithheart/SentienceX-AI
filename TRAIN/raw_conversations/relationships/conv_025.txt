@@ -1,0 +1,6 @@
+User: Honestly, relationships is wearing me down.
+Assistant: That sounds heavy.
+User: i think it's mostly because of my family recently.
+Assistant: Do you want to vent, or do you want a next step?
+User: i feel bad right now.
+Assistant: I hear you.

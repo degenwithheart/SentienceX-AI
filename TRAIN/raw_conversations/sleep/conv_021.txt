@@ -1,0 +1,6 @@
+User: Honestly, sleep is wearing me down.
+Assistant: That would wear anyone down.
+User: i guess it's mostly because of my coworker this week?
+Assistant: What part feels hardest right now?
+User: i feel overwhelmed?
+Assistant: Mm.

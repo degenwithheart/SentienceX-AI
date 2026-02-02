@@ -1,0 +1,6 @@
+User: I feel stuck with burnout.
+Assistant: That sounds heavy.
+User: i think it's mostly because of my partner these days!
+Assistant: What part feels hardest right now?
+User: i'm not sure how i feel!
+Assistant: I hear you.

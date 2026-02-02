@@ -1,0 +1,6 @@
+User: I've been thinking about anxiety a lot.
+Assistant: That would wear anyone down.
+User: sort of it's mostly because of my coworker?
+Assistant: What’s the piece you can’t stop thinking about?
+User: i feel bad today?
+Assistant: I hear you.

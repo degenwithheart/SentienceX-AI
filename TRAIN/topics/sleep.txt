@@ -1,0 +1,12 @@
+# topic=sleep
+# sensitivity=0.35
+sleep|1.0
+insomnia|0.9
+tired|0.8
+wired|0.6
+restless|0.6
+night|0.5
+morning|0.4
+can't fall asleep|0.8
+can't stay asleep|0.7
+racing mind|0.6

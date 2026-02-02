@@ -1,0 +1,23 @@
+{
+  "labels": {
+    "sarcastic": {
+      "bias": -0.4,
+      "weights": {
+        "sarcasm_hits": 1.6,
+        "ellipses": 0.25,
+        "emarks": 0.12,
+        "contains_quote": 0.2,
+        "pos_hits": 0.2,
+        "neg_hits": 0.2
+      }
+    },
+    "not_sarcastic": {
+      "bias": 0.4,
+      "weights": {
+        "sarcasm_hits": -0.8,
+        "len_tokens": 0.01
+      }
+    }
+  }
+}
+

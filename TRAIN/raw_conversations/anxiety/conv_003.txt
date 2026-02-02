@@ -1,0 +1,6 @@
+User: Honestly, anxiety is wearing me down.
+Assistant: I can see why that would hurt.
+User: not sure it's mostly because of my partner lately?
+Assistant: What’s the piece you can’t stop thinking about?
+User: i'm listening.
+Assistant: I hear you.

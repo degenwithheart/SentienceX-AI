@@ -1,54 +1,31 @@
-version: '3.8'
 services:
-  backend:
+  api:
     build: .
+    environment:
+      SENTIENCEX_DATA_DIR: /app/data
+      SENTIENCEX_LOCALE: en
+      SENTIENCEX_CORS_ORIGINS: http://localhost:3000
+      SENTIENCEX_TRUSTED_HOSTS: localhost,127.0.0.1
+      SENTIENCEX_RATE_LIMIT_ENABLED: "true"
+      SENTIENCEX_REDIS_URL: redis://redis:6379/0
+    volumes:
+      - ./data:/app/data
     ports:
       - "8000:8000"
-    environment:
-      - MODEL_DEVICE=cpu
-      - DISABLE_HTTPS_ENFORCEMENT=true
-      - LOG_ROTATE=true
-      - REDIS_URL=redis://redis:6379/0
-    volumes:
-      - ./:/app
     depends_on:
       - redis
-      - caddy
 
-  # Optional infra services (uncomment to enable)
-  # redis:
   redis:
-    image: redis:7
+    image: redis:7-alpine
     ports:
       - "6379:6379"
-    restart: unless-stopped
-  # rabbitmq:
-  #   image: rabbitmq:3-management
-  #   ports:
-  #     - "5672:5672"
-  #     - "15672:15672"
-  # postgres:
-  #   image: postgres:15
-  #   environment:
-  #     POSTGRES_USER: sentience
-  #     POSTGRES_PASSWORD: sentience
-  #     POSTGRES_DB: sentience
-  #   ports:
-  #     - "5432:5432"
 
-  # Caddy as TLS reverse-proxy for local development; uses an internal CA so no external certificates are required.
-  caddy:
-    image: caddy:2
+  frontend:
+    build: ./frontend
+    environment:
+      NEXT_PUBLIC_API_BASE: http://localhost:8000
     ports:
-      - "443:443"
-      - "2019:2019" # caddy admin
-    volumes:
-      - ./deploy/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy_data:/data
-      - caddy_config:/config
+      - "3000:3000"
     depends_on:
-      - backend
+      - api
 
-volumes:
-  caddy_data:
-  caddy_config:

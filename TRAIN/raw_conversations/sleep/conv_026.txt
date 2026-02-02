@@ -1,0 +1,6 @@
+User: I've been thinking about sleep a lot.
+Assistant: That sounds heavy.
+User: not sure it's mostly because of someone close to me.
+Assistant: What would make tonight feel a little safer or easier?
+User: i'm fine i guess.
+Assistant: Mm.

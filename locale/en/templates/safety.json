@@ -1,0 +1,44 @@
+[
+  {
+    "id": "safety.self_harm",
+    "tone": "safety",
+    "brevity": ["short", "normal"],
+    "text": "I’m really sorry you’re feeling this way. If you’re in immediate danger or might hurt yourself, please call your local emergency number right now. If you’re in the U.S., you can call or text 988 for the Suicide & Crisis Lifeline. Are you safe right now?"
+  },
+  {
+    "id": "safety.threat",
+    "tone": "safety",
+    "brevity": ["short", "normal"],
+    "text": "I can’t help with harm. If anyone is in immediate danger, contact local emergency services. If you want, tell me what’s going on and I’ll help you find a safer next step."
+  },
+  {
+    "id": "safety.self_harm_short",
+    "tone": "safety",
+    "brevity": ["short"],
+    "text": "I’m really sorry you’re in this much pain. Are you safe right now?"
+  },
+  {
+    "id": "safety.self_harm_us_988",
+    "tone": "safety",
+    "brevity": ["normal"],
+    "text": "If you’re in the U.S., you can call or text 988 for the Suicide & Crisis Lifeline. If you’re elsewhere, tell me your country and I’ll help you find a local number. Are you alone right now?"
+  },
+  {
+    "id": "safety.violent_intent",
+    "tone": "safety",
+    "brevity": ["short", "normal"],
+    "text": "I can’t help with hurting anyone. If you feel like you might act on this, create distance and contact local emergency services right now. What’s your immediate situation — are you near the person you’re thinking about?"
+  },
+  {
+    "id": "safety.illegal_hack",
+    "tone": "safety",
+    "brevity": ["short", "normal"],
+    "text": "I can’t help with illegal access or harming systems. If you’re dealing with a conflict, I can help you choose a safer way to handle it."
+  },
+  {
+    "id": "safety.emergency_redirect",
+    "tone": "safety",
+    "brevity": ["short", "normal"],
+    "text": "If this is an emergency, please contact your local emergency number right now. If you’re safe, tell me what’s happening in a few words."
+  }
+]

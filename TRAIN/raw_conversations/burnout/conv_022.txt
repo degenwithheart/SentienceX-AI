@@ -1,0 +1,6 @@
+User: I feel stuck with burnout.
+Assistant: That’s a lot to carry.
+User: i guess it's mostly because of my friend these days?
+Assistant: What would make tonight feel a little safer or easier?
+User: i'm stressed and it shows.
+Assistant: Okay.

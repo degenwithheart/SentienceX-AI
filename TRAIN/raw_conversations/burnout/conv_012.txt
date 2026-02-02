@@ -1,0 +1,6 @@
+User: burnout has been getting to me.
+Assistant: That’s a lot to carry.
+User: i guess it's mostly because of my coworker lately.
+Assistant: Do you want to vent, or do you want a next step?
+User: i'm stressed and it shows!
+Assistant: I hear you.

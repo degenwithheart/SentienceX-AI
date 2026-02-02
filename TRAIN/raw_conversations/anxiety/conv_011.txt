@@ -1,0 +1,6 @@
+User: anxiety has been getting to me.
+Assistant: That would wear anyone down.
+User: i think it's mostly because of my boss today.
+Assistant: What part feels hardest right now?
+User: i feel alone in this.
+Assistant: I hear you.

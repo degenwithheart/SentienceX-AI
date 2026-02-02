@@ -1,0 +1,6 @@
+User: I feel stuck with burnout.
+Assistant: I can see why that would hurt.
+User: i think it's mostly because of someone close to me.
+Assistant: Do you want to vent, or do you want a next step?
+User: this hurts lately.
+Assistant: Mm.

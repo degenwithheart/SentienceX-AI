@@ -1,126 +1,151 @@
 # SentienceX-AI
 
-SentienceX-AI is an advanced AI-powered chatbot application that provides intelligent conversational responses with real-time analysis capabilities including sentiment detection, threat assessment, sarcasm recognition, and adaptive learning. The application consists of a FastAPI backend handling API endpoints and machine learning models, and a Next.js frontend offering an interactive user interface with data visualizations.
+Single-user, long-term companion AI built from lightweight symbolic + statistical components.
 
-## Features
+**Design constraints**
+- No transformers, no embeddings, no tokenizers, no HuggingFace
+- Runs locally on modest hardware (~1 core / ~1GB) via small linear classifiers + rules
+- Streaming/incremental training only (no large datasets loaded into memory)
+- One user, one device, persistent memory on disk
 
-- **Conversational AI**: Generate context-aware responses using transformer-based language models.
-- **Sentiment Analysis**: Analyze user input for positive, negative, and neutral sentiments.
-- **Threat Detection**: Identify potential security threats in conversations.
-- **Sarcasm Detection**: Recognize sarcastic language patterns.
-- **Adaptive Learning**: Continuously improve responses based on user feedback and interaction patterns.
-- **Self-Monitoring**: Track system resources, performance metrics, and operational health.
-- **Rate Limiting**: Redis-backed token-bucket rate limiting with configurable per-route policies.
-- **Real-Time Logging**: Stream conversation logs and analytics data.
-- **Audio Synthesis**: Text-to-speech capabilities for audio responses.
-- **Retraining**: Scheduled model retraining with new data.
-- **Metrics and Monitoring**: Prometheus metrics for request tracking and performance monitoring.
-- **Secure Deployment**: HTTPS enforcement, CORS protection, and trusted host middleware.
-- **Docker Support**: Containerized deployment with docker-compose for local development.
+## What it does
+- Local NLP pipeline: normalization + segmentation + sentence splitting + numeric features
+- Lightweight classifiers: intent, sentiment, sarcasm, threat (dot-products from `models/*.json`)
+- Cognitive layer: hidden distress + masking signals + soft contradiction detection
+- Memory: STM + episodic summaries + semantic facts/topics + inverted index retrieval
+- Proactive support: gentle check-ins based on trends/unresolved topics
+- Learning: template ranking + tone preference + weak-label self-learning + supervised retraining from `TRAIN/`
+- Monitoring: CPU/RAM (+ best-effort GPU/temp), Prometheus metrics, health endpoint
+- Security model: single user (no account) + separate admin (system commands only)
 
-## Model Information
+## Quick start (backend)
 
-The application utilizes pre-trained models from Hugging Face for immediate functionality and analysis capabilities while custom local models are being trained and fine-tuned for optimal performance.
+### Requirements
+- Python 3.11+ recommended
+- Optional: Redis (rate limiting)
+- Optional: `say` (macOS) or `espeak` (Linux) for offline TTS
+- Optional: `nvidia-smi` (for GPU util/temp metrics if you have Nvidia)
 
-## Requirements
+### Run
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 
-- Python 3.8+
-- Node.js 16+
-- Docker and Docker Compose (for containerized deployment)
-- Redis (for rate limiting)
-- PostgreSQL (optional, for data persistence)
+export SENTIENCEX_DATA_DIR="$(pwd)/data"
+uvicorn app.main:app --reload --port 8000
+```
 
-## How to Run
+On first run the backend creates an admin record at `data/admin.json` and prints an admin token once (save it).
 
-### Local Development
+## Frontend (Next.js)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/degenwithheart/SentienceX-AI-main.git
-   cd SentienceX-AI-main
-   ```
+Set `NEXT_PUBLIC_API_BASE=http://localhost:8000` (or via `.env.local`).
 
-2. **Set up the backend**:
-   ```bash
-   cd backend
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   pip install -r ../requirements.txt
-   ```
+The UI is glassmorphism with Light/Dark mode, mobile-first responsive layout, and Sonner toasts.
 
-3. **Set up the frontend**:
-   ```bash
-   cd ../frontend
-   npm install
-   ```
+## First-time user setup
 
-4. **Run with Docker Compose** (recommended):
-   ```bash
-   cd ..
-   docker-compose up --build
-   ```
-   This starts the backend, Redis, and Caddy proxy.
+The system is designed for **one user**. On first visit, the UI will ask for:
+- Name
+- DOB (YYYY-MM-DD)
+- Location
 
-5. **Run manually**:
-   - Backend: `uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000`
-   - Frontend: `cd frontend && npm run dev`
+Saved to `data/user_profile.json` via `PUT /user/profile`.
 
-6. **Access the application**:
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:8000 (or https://localhost via Caddy)
+## Persistence / resume fail-safe
 
-### Production Deployment
+The chat UI persists a compact state locally (for hard refresh survival) and can also resume from the backend:
+- Frontend local persistence (best effort) + backend resume fallback: `GET /session/resume`
 
-1. Build and run with Docker:
-   ```bash
-   docker build -t sentiencex-ai .
-   docker run -p 8000:8000 sentiencex-ai
-   ```
+## Admin (system-level access) — via chat only
 
-2. Use the provided systemd service file in `deploy/` for system deployment.
+Admin is **not the user**. Admin-only actions are executed only when admin mode is enabled.
 
-3. Configure environment variables for production settings (see backend README).
+Enter admin mode in chat:
+- `admin:<your_admin_token>`
 
-## Folder Structure
+Exit admin mode:
+- `admin:exit` (or `exit`)
 
-- `app/`: Next.js application pages and layout files.
-- `backend/`: Python FastAPI backend code, including API endpoints, models, and utilities.
-- `components/`: Reusable React components for the frontend, such as sentiment graphs and threat panels.
-- `deploy/`: Deployment configurations, including systemd service files and Caddy proxy setup.
-- `frontend/`: Frontend-specific files and configurations.
-- `types/`: TypeScript type definitions.
+Admin mode properties:
+- Secure session cookie (HttpOnly), token never stored in the browser
+- Admin chat is not persisted to disk and event streaming is disabled
+- Auto-exits after 15 seconds of inactivity
 
-## Configuration
+Admin-only endpoints (require admin mode):
+- `GET /metrics`
+- `GET /logs/stream`
+- `GET /training/status`
+- `POST /training/run`
 
-Environment variables are used for configuration. Key variables include:
+## Training (streaming + incremental)
 
-- `MODEL_DEVICE`: Device for model inference (cpu/gpu).
-- `REDIS_URL`: Redis connection URL for rate limiting.
-- `ALLOWED_ORIGINS`: Comma-separated list of allowed CORS origins.
-- `DISABLE_HTTPS_ENFORCEMENT`: Disable HTTPS requirements for development.
+All learning consumes text from `TRAIN/` and only writes small artifacts to:
+- `models/*.json`
+- `cognition/*.json`
+- `knowledge/*.json` and `knowledge/actions/*.json`
 
-See `backend/README.md` for detailed configuration options.
+### TRAIN/ inputs
+- `TRAIN/intent/{micro,short,normal}/<label>.txt` (1 phrase per line)
+- `TRAIN/sentiment/{micro,short,normal}/<label>.txt`
+- `TRAIN/sarcasm/{micro,short,normal}/<label>.txt`
+- `TRAIN/threat/{micro,short,normal}/<label>.txt`
+- `TRAIN/stories/**/*.txt` (multi-line narratives)
+- `TRAIN/topics/<topic>.txt` (terms per line, optional `# sensitivity=0.7`, optional `term|0.8`)
+- `TRAIN/skills/<topic>.txt` (advice/steps; imperatives are extracted)
+- `TRAIN/raw_conversations/**/*.txt|.jsonl` (user/assistant transcripts)
+- `TRAIN/style_samples/user.txt` (your writing samples; emojis allowed here only)
 
-## API Endpoints
+### Run training (admin required)
+- `POST /training/run` with body:
+  - `{ "modules": ["supervised","stories","topics","skills","conversations","style_bootstrap","weak_labels"], "force_full": false }`
+- `GET /training/status`
 
-- `POST /api/chat`: Send a message and receive AI response with analysis.
-- `GET /api/logs`: Stream real-time conversation logs.
-- `POST /api/retrain`: Trigger model retraining.
-- `GET /api/ratelimit/keys`: Admin endpoint for rate limit inspection.
-- `GET /metrics`: Prometheus metrics endpoint.
+### Idle training
+When the user is inactive for 5 minutes, the scheduler can run training automatically (best-effort, and won’t start if the machine is already very hot).
 
-## Additional Documentation
+## Resource governor
 
-- **[Backend README](backend/README.md)**: Comprehensive guide to the FastAPI backend, including detailed setup instructions, API endpoint documentation, configuration options, and machine learning model details.
-- **[Frontend README](frontend/README.md)**: Complete overview of the Next.js frontend, covering development setup, component architecture, UI features, and real-time data visualization.
+Normal user mode is budgeted to avoid exceeding ~50% CPU/RAM by degrading optional work:
+- smaller/disabled retrieval
+- no proactive prompts
+- no added “action” suggestions
 
-## Contributing
+Training/admin operations can exceed that budget.
 
-1. Fork the repository.
-2. Create a feature branch.
-3. Make your changes and test thoroughly.
-4. Submit a pull request.
+## API endpoints
 
-## License
+User:
+- `POST /chat`
+- `POST /feedback`
+- `GET /health`
+- `POST /tts`
+- `GET /session/resume`
+- `GET /user/profile`
+- `PUT /user/profile`
 
-See `LICENSE` file for details.
+Admin-only (unlock via `admin:<token>` in chat):
+- `GET /metrics`
+- `GET /logs/stream`
+- `GET /training/status`
+- `POST /training/run`
+
+## Admin key provisioning tool
+
+If you want to set/rotate the admin key without relying on the one-time printed token:
+```bash
+python tools/admin_key_encrypt.py
+```
+
+This writes a one-way PBKDF2 digest to `data/admin.json`.
+
+## Docker
+```bash
+docker compose up --build
+```

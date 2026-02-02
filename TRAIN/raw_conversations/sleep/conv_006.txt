@@ -1,0 +1,6 @@
+User: sleep has been getting to me.
+Assistant: That’s a lot to carry.
+User: not sure it's mostly because of my boss lately!
+Assistant: Do you want to vent, or do you want a next step?
+User: i'm not sure how i feel.
+Assistant: I'm with you.

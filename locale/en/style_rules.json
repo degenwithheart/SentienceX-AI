@@ -1,0 +1,14 @@
+{
+  "max_emojis_per_reply": 0,
+  "allow_slang": true,
+  "max_sentences_micro": 1,
+  "max_sentences_short": 2,
+  "max_sentences_normal": 5,
+  "avoid_diagnosis_language": true,
+  "soften_accusations": true,
+  "advice_cooldown_turns": 2,
+  "avoid_meta_language": true,
+  "avoid_self_reference": true,
+  "tone_neutral_authority": true,
+  "prefer_questions_over_advice": true
+}

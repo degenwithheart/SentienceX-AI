@@ -1,0 +1,6 @@
+User: I've been thinking about anxiety a lot.
+Assistant: I can see why that would hurt.
+User: i think it's mostly because of my boss recently.
+Assistant: Do you want to vent, or do you want a next step?
+User: i feel overwhelmed!
+Assistant: I'm with you.

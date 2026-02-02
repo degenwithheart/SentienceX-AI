@@ -1,0 +1,44 @@
+[
+  {
+    "id": "proactive.check_in",
+    "tone": "proactive",
+    "brevity": ["short", "normal"],
+    "text": "Quick check-in: you’ve mentioned {topic} a few times lately. How are you holding up with it today?"
+  },
+  {
+    "id": "proactive.unresolved",
+    "tone": "proactive",
+    "brevity": ["normal"],
+    "text": "Last time we touched {topic}, it felt unfinished. Want to pick it back up, or would you rather leave it alone for now?"
+  },
+  {
+    "id": "proactive.gentle_ping",
+    "tone": "proactive",
+    "brevity": ["short"],
+    "text": "Just checking in on {topic}. How’s it sitting with you today?"
+  },
+  {
+    "id": "proactive.permission",
+    "tone": "proactive",
+    "brevity": ["short", "normal"],
+    "text": "We can talk about {topic} if you want. Do you want to go there right now?"
+  },
+  {
+    "id": "proactive_withdrawal",
+    "tone": "proactive",
+    "brevity": ["short", "normal"],
+    "text": "When {topic} comes up, you tend to get quieter. No pressure — do you want a gentle check-in, or should we just sit with it?"
+  },
+  {
+    "id": "proactive_small_update",
+    "tone": "proactive",
+    "brevity": ["short", "normal"],
+    "text": "Any small update on {topic}?"
+  },
+  {
+    "id": "proactive_anchor",
+    "tone": "proactive",
+    "brevity": ["normal"],
+    "text": "Before we dive back into {topic}, do you want to ground for ten seconds, or keep moving?"
+  }
+]
