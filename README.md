@@ -38,6 +38,8 @@ uvicorn app.main:app --reload --port 8000
 
 On first run the backend creates an admin record at `data/admin.json` and prints an admin token once (save it).
 
+Environment variables are optional; see `.env.example` for the full list (all settings are prefixed with `SENTIENCEX_`).
+
 ## Frontend (Next.js)
 ```bash
 cd frontend
@@ -45,7 +47,7 @@ npm install
 npm run dev
 ```
 
-Set `NEXT_PUBLIC_API_BASE=http://localhost:8000` (or via `.env.local`).
+Set `NEXT_PUBLIC_API_BASE=http://localhost:8000` (or copy `frontend/.env.local.example` to `frontend/.env.local`).
 
 The UI is glassmorphism with Light/Dark mode, mobile-first responsive layout, and Sonner toasts.
 
